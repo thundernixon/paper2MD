@@ -8,8 +8,11 @@
 
 - Creates an `assets` folder and `README.md` next to the file you input and saves images from Dropbox URLs into this folder.
 - Creates a `README.md` file which is a copy of the file you input, but with images pointing to your newly-downloaded assets. If there is already a `README.md` at the same level as your input file, it will instead create a file with the suffix `-local.md`.
+- Dropbox Paper saves image captions as `alt` text which GitHub doesn't display, so this places that text below as italic text.
 
 **Use at your own risk.** This was a quick-n-dirty script made to solve an immediate need.
+
+![](before_after.png)
 
 ## Usage
 
