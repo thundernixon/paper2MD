@@ -48,15 +48,15 @@ for line in contents:
         filename = f"fig-{counter}.{filetype}"
         filepath = f"{workingDir}/assets/fig-{filename}"
 
-        downloadImage(imgUrl, filepath)
+        # downloadImage(imgUrl, filepath)
         counter = counter + 1
 
         # update markdown file text with local image path
 
-        goodDoc.write(f"![](assets/{filename})")
+        goodDoc.write(f"![](assets/{filename})\n\n")
 
-        if match[0][1] != '':
-            goodDoc.write("\n"+"match[0][1]")
+        if match[0][0] != '':
+            goodDoc.write(f"*{match[0][0]}*\n\n")
 
     # if line isn't an image, just write it as-is
     else:
