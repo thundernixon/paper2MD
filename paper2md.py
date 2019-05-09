@@ -13,7 +13,12 @@ paperDoc = open(path, "r")
 
 contents = paperDoc.readlines()
 
-goodDoc = open(f"{workingDir}/README.md", "w")
+# make README file if none exists, otherwise make suffixed file
+if os.path.isfile(f"{workingDir}/README.md") != True:
+    goodDoc = open(f"{workingDir}/README.md", "w")
+else:
+    suffixed = basename.replace(".md", "-local.md")
+    goodDoc = open(f"{workingDir}/{suffixed}", "w")
 
 # make assets directory
 try:
