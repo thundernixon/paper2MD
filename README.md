@@ -1,4 +1,4 @@
-# Dropbox Paper Markdown to Real Markdown (with local image files)
+# Download images from Dropbox Paper Markdown export
 
 **The problem:** Dropbox Paper exports to Markdown (nice), but all images still reference their Dropbox URLs rather than image downloads, making it poorly-suited for properly moving documentation out of Dropbox Paper into anywhere else (e.g. a GitHub repo).
 
