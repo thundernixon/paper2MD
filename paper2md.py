@@ -46,9 +46,9 @@ for line in contents:
         imgUrl = match[0][1]
         filetype = imgUrl.split('.')[-1]
         filename = f"fig-{counter}.{filetype}"
-        filepath = f"{workingDir}/assets/fig-{filename}"
+        filepath = f"{workingDir}/assets/{filename}"
 
-        # downloadImage(imgUrl, filepath)
+        downloadImage(imgUrl, filepath)
         counter = counter + 1
 
         # update markdown file text with local image path
