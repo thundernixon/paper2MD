@@ -63,4 +63,4 @@ With the venv activated in this project, run the script on your downloaded Dropb
 python paper2md.py <your_file_path_here>/paper.md
 ```
 
-This will create an `assets` folder with save images and an updated `README.md` markdown file next to the file you input.
+This will create an `assets` folder with saved images and an updated `README.md` markdown file next to the file you input.
